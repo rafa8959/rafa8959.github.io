@@ -13,12 +13,15 @@
 			src: url('digital.ttf') format("truetype");
 		}
     </style>
+ 
 </head>
 <body>
-    <p style=" width: 100%; height: 100%; position: absolute; padding: 40px; text-align: justify; z-index: 0;"> Aun tengo mucho que aprender sobre el amor, pero quiero aprenderlo contigo, <br>
+
+    <p style=" width: 100%; height: 100%; position: absolute; padding: 30px; text-align: justify; margin-top: 0px; font-size: 1.18em; line-height: 1.5;"> Aun tengo mucho que aprender sobre el amor, pero quiero aprenderlo contigo, <br>
         aun tengo muchos defectos por corregir, pero quiero corregirlos por nosotros, <br>
        
         aun me quedan muchas cosas por vivir, pero se que quiero vivirlas contigo</p>
+        <input style="width: 100vw; height: 100vh; position: absolute; opacity: 0.01;"  type="image" src="http://button.png" onclick="audio.play()">
 <!--     <button class="rainbow_btn">
         TE AMO ❤️
     </button> -->
@@ -33,5 +36,21 @@
 
 <!-- js here -->
     <script src="app.js"></script>
-</body>
+ <script>
+var audio = new Audio("audio.ogg");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+
+
+ </script>
+ </body>
 </html>
