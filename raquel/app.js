@@ -3,7 +3,7 @@ var canvas = document.getElementById("canvas");
 //document.getElementById('playAudio').play();
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight + 150;
+canvas.height = window.innerHeight + 200;
 
 // Initialize the GL context
 var gl = canvas.getContext('webgl');
