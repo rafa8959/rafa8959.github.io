@@ -3,7 +3,7 @@ var canvas = document.getElementById("canvas");
 //document.getElementById('playAudio').play();
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight + 300;
+canvas.height = window.innerHeight;
 
 // Initialize the GL context
 var gl = canvas.getContext('webgl');
@@ -231,9 +231,9 @@ gl.useProgram(program);
 //Set up rectangle covering entire canvas 
 var vertexData = new Float32Array([
   -1.0,  1.0, 	// top left
-  -1.0, -1.0, 	// bottom left
+  -100.0, -1.0, 	// bottom left
    1.0,  1.0, 	// top right
-   1.0, -1.0, 	// bottom right
+   100000.0, 10.0, 	// bottom right
 ]);
 
 //Create vertex buffer
